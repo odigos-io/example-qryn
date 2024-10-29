@@ -14,7 +14,7 @@ deploy-clickhouse:
 deploy-qryn:
 	@echo "Installing qryn"
 	@helm repo add qryn-helm https://metrico.github.io/qryn-helm/
-	@helm install --values qryn/qryn-values.yaml qryn qryn-helm/qryn-helm --version 0.1.2 --namespace=qryn
+	@helm install --values qryn/qryn-values.yaml qryn qryn-helm/qryn-helm --version 0.1.3 --namespace=qryn
 
 .PHONY: deploy-grafana
 deploy-grafana:

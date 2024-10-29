@@ -7,7 +7,7 @@ datasources:
         type: loki
         access: proxy
         uid: loki
-        url: http://qryn:3100
+        url: http://qryn-qryn-helm:3100
         editable: true
         jsonData:
           derivedFields:
@@ -23,7 +23,7 @@ datasources:
         type: tempo
         access: proxy
         uid: tempo
-        url: http://qryn:3100
+        url: http://qryn-qryn-helm:3100
         editable: true
         jsonData:
           nodeGraph:
@@ -45,7 +45,7 @@ datasources:
         type: prometheus
         access: proxy
         uid: prometheus
-        url: http://qryn:3100
+        url: http://qryn-qryn-helm:3100
         editable: true
         basicAuth: false
         jsonData:
